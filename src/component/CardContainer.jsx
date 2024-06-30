@@ -6,6 +6,7 @@ function CardContainer({ title, url }) {
   const [popularMovies, setPopularMovies] = useState([]);
   useEffect(() => {
     getPopularMovies();
+    // eslint-disable-next-line
   }, []);
 
   const getPopularMovies = async () => {
